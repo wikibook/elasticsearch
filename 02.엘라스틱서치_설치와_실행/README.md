@@ -22,6 +22,7 @@ bin/elasticsearch
 예제 2.2 백그라운드로 실행 중인 엘라스틱서치의 로그 파일 내용
 ```
 bin/elasticsearch -d
+
 cat logs/elasticsearch.log
 ```
 
@@ -41,6 +42,7 @@ ps -ef | grep elasticsearch
 예제 2.5 kill 명령으로 엘라스틱서치 프로세스 종료
 ```
 kill 30985
+
 ps -ef | grep elasticsearch
 ```
 
@@ -48,8 +50,11 @@ ps -ef | grep elasticsearch
 예제 2.6 -p 옵션으로 es.pid 파일에 프로세스 ID 저장
 ```
 bin/elasticsearch -d -p es.pid
+
 ls
+
 cat es.pid
+
 ps -ef | grep elasticsearch
 ```
 
@@ -57,6 +62,7 @@ ps -ef | grep elasticsearch
 예제 2.7 kill 명령으로 엘라스틱서치 프로세스 종료 (31070 => 프로세스 ID 입력)
 ```
 kill 31070
+
 ls
 ```
 
@@ -64,8 +70,11 @@ ls
 예제 2.8 start.sh, stop.sh 파일 생성
 ```
 echo 'bin/elasticsearch -d -p es.pid' > start.sh
+
 echo 'kill `cat es.pid`' > stop.sh
+
 chmod 755 start.sh stop.sh
+
 ls
 ```
 
@@ -73,10 +82,15 @@ ls
 예제 2.9 start.sh, stop.sh 실행
 ```
 ./start.sh
+
 ls
+
 ps -ef | grep elasticsearch
+
 ./stop.sh
+
 ls
+
 ps -ef | grep elasticsearc
 ```
 
@@ -93,6 +107,7 @@ sudo rpm -ivh elasticsearch-1.1.1.rpm
 예제 2.11 엘라스틱서치 실행 파일과 설정 파일
 ```
 ls /etc/init.d/elasticsearch
+
 ls /etc/elasticsearch/
 ```
 
@@ -100,6 +115,7 @@ ls /etc/elasticsearch/
 예제 2.12 엘라스틱서치 서비스 시작
 ```
 sudo service elasticsearch start
+
 ps -ef | grep elasticsearch
 ```
 
@@ -107,6 +123,7 @@ ps -ef | grep elasticsearch
 예제 2.13 엘라스틱서치 서비스 종료
 ```
 sudo service elasticsearch stop
+
 ps -ef | grep elasticsearch
 ```
 
@@ -165,6 +182,7 @@ ls lib/
 예제 2.21 엘라스틱서치 실행 프로세스 조회
 ```
 bin/elasticsearch -d
+
 ps -ef | grep elasticsearch
 ```
 
@@ -184,6 +202,7 @@ ls logs/
 예제 2.24 엘라스틱서치 data/ 디렉터리 조회
 ```
 ls data/
+
 tree data/
 ```
 
@@ -197,6 +216,7 @@ tree data/
 예제 2.25 엘라스틱서치 실행 프로세스 조회
 ```
 bin/elasticsearch -d
+
 ps -ef | grep elasticsearch
 ```
 
@@ -277,6 +297,7 @@ bin/elasticsearch
 예제 2.30 path.logs 설정 변경 후 엘라스틱서치 디렉터리 구조 확인
 ```
 ls
+
 ls test_log/
 ```
 
@@ -284,6 +305,7 @@ ls test_log/
 예제 2.31 path.logs 설정 변경 후 엘라스틱서치 디렉터리 구조 확인
 ```
 ls
+
 ls test_log/
 ```
 
@@ -321,5 +343,6 @@ curl -XGET localhost:9200/_nodes?pretty=true
 예제 2.36 헤드 플러그인 삭제 후 설치된 플러그인 확인
 ```
 bin/plugin --remove head
+
 bin/plugin --list
 ```
