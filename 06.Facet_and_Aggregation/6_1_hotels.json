@@ -1,0 +1,40 @@
+{ "create" : { "_index": "hotels", "_type": "hotel"} }
+{ "name" : "Conrad Seoul", "stars" : 5 , "rooms" : 434 , "location" : { "lat" : 37.525308, "lon" : 126.926644 } , "city" : "Seoul", "address" : "10, Gukjegeumyung-ro, Yeongdeungpo-gu Seoul Seoul 150-945 South Korea", "price" : 380, "internet" : true, "service" : ["Health Club","Spa","Valet parking","Wedding"], "checkin" : "2014-02-19T11:00:00" }
+{ "create" : { "_index": "hotels", "_type": "hotel"} }
+{ "name" : "Grand Hyatt Seoul", "stars" : 5 , "rooms" : 585 , "location" : { "lat" : 37.539031 , "lon" : 126.997521 } , "city" : "Seoul", "address" : "322 Sowol-ro, Yongsan-gu Seoul Seoul 140-738 South Korea", "price" : 292, "internet" : true, "service" : ["Health Club","Swimming pool","Spa","Sauna","Valet parking"], "checkin" : "2014-03-07T11:00:00" }
+{ "create" : { "_index": "hotels", "_type": "hotel"} }
+{ "name" : "Lotte Hotel Seoul", "stars" : 5 , "rooms" : 1479, "location" : { "lat" : 37.565283 , "lon" : 126.981313 } , "city" : "Seoul", "address" : "30, Eulji-ro, Jung-gu Seoul Seoul 100-721 South Korea", "price" : 320, "internet" : true, "service" : ["Conference space","Coffee shop","Bar"], "checkin" : "2014-02-21T11:00:00" }
+{ "create" : { "_index": "hotels", "_type": "hotel"} }
+{ "name" : "Grand InterContinental Seoul Parnas", "stars" : 5 , "rooms" : 518, "location" : { "lat" : 37.508844, "lon" : 127.061007 } , "city" : "Seoul", "address" : "521, Teheran-ro, Gangnam-gu Seoul Seoul 135-732 South Korea", "price" : 226 , "internet" : true, "service" : ["Conference space"], "checkin" : "2014-02-20T11:00:00" }
+{ "create" : { "_index": "hotels", "_type": "hotel"} }
+{ "name" : "The Shilla Seoul ", "stars" : 5 , "rooms" : 464 , "location" : { "lat" : 37.556035 , "lon" : 127.005232 } , "city" : "Seoul", "address" : "249, Dongho-ro, Jung-gu Seoul Seoul 100202 South Korea", "price" : 330 , "internet" : true, "service" : ["Arcade Game room","Spa","Shopping Center"], "checkin" : "2014-04-01T11:00:00" }
+{ "create" : { "_index": "hotels", "_type": "hotel"} }
+{ "name" : "InterContinental Seoul COEX", "stars" : 4 , "rooms" : 613 , "location" : { "lat" : 37.512849 , "lon" : 127.057281 } , "city" : "Seoul", "address" : "524, Bongeunsa-ro, Gangnam-gu Seoul Seoul 135-975 South Korea", "price" : 260, "internet" : true, "service" : ["Conference space","Coffee shop"], "checkin" : "2014-03-05T11:00:00" }
+{ "create" : { "_index": "hotels", "_type": "hotel"} }
+{ "name" : "Best Western Premier Guro Hotel", "stars" : 4 , "rooms" : 201 , "location" : { "lat" : 37.483155 , "lon" : 126.898848 } , "city" : "Seoul", "address" : "72, Digital-ro 32-gil, Guro-gu Seoul Seoul 152-050 South Korea", "price" : 189 , "internet" : true, "service" : ["Conference space","Bar"], "checkin" : "2014-03-04T11:00:00" }
+{ "create" : { "_index": "hotels", "_type": "hotel"} }
+{ "name" : "Sejong Hotel", "stars" : 4 , "rooms" : 333 , "location" : { "lat" : 37.561407 , "lon" : 126.987954 } , "city" : "Seoul", "address" : "145, Toegye-ro, Jung-gu Seoul Seoul South Korea", "price" : 260 , "internet" : true, "service" : ["Coffee shop"], "checkin" : "2014-02-11T11:00:00" }
+{ "create" : { "_index": "hotels", "_type": "hotel"} }
+{ "name" : "Koreana Hotel", "stars" : 4 , "rooms" : 337 , "location" : { "lat" : 37.568427 , "lon" : 126.976645 } , "city" : "Seoul", "address" : "135, Sejong-daero, Jung-gu Seoul Seoul 100-101 South Korea", "price" : 175, "internet" : true, "service" : ["Coffee shop"], "checkin" : "2014-03-21T11:00:00" }
+{ "create" : { "_index": "hotels", "_type": "hotel"} }
+{ "name" : "Nox Hotel", "stars" : 3 , "rooms" : 41 , "location" : { "lat" : 37.502668 , "lon" : 127.039728 } , "city" : "Seoul", "address" : "13-13, Teheran-ro 37-gil Gangnam-gu Seoul Seoul South Korea", "price" : 182 , "internet" : true, "service" : ["Coffee shop","Health Club"], "checkin" : "2014-04-13T11:00:00" }
+{ "create" : { "_index": "hotels", "_type": "hotel"} }
+{ "name" : "Hotel Skypark Central Myeongdong", "stars" : 3 , "rooms" : 312 , "location" : { "lat" : 37.564722 , "lon" : 126.984964 } , "city" : "Seoul", "address" : "16, Myeongdong 9-gil, Jung-gu Seoul Seoul South Korea", "price" : 152 , "internet" : true, "service" : ["Coffee shop"], "checkin" : "2014-03-13T11:00:00" }
+{ "create" : { "_index": "hotels", "_type": "hotel"} }
+{ "name" : "Hotel Prince Seoul", "stars" : 3 , "rooms" : 100 , "location" : { "lat" : 37.560675 , "lon" : 126.986333 } , "city" : "Seoul", "address" : "130, Toegye-ro, Jung-gu Seoul Seoul South Korea", "price" : 148, "internet" : true, "service" : ["Coffee shop"], "checkin" : "2014-05-01T11:00:00" }
+{ "create" : { "_index": "hotels", "_type": "hotel"} }
+{ "name" : "Ramada Seoul Jongno", "stars" : 3 , "rooms" : 139 , "location" : { "lat" : 37.571869 , "lon" : 126.998177 } , "city" : "Seoul", "address" : "106 Changgyeonggung-ro, Jongno-gu (48-26 Inui-dong, Jongno-gu) Seoul Seoul 110-891 South Korea", "price" : 119 , "internet" : true, "service" : ["Coffee shop"], "checkin" : "2014-03-12T11:00:00" }
+{ "create" : { "_index": "hotels", "_type": "hotel"} }
+{ "name" : "Dong Seoul Hotel", "stars" : 3 , "rooms" : 115 , "location" : { "lat" : 37.534303 , "lon" : 127.091908 } , "city" : "Seoul", "address" : "38, Guuigangbyeon-ro, Gwangjin-gu Seoul Seoul 143-200 South Korea", "price" : 98 , "internet" : true, "service" : ["Coffee shop"], "checkin" : "2014-04-02T11:00:00" }
+{ "create" : { "_index": "hotels", "_type": "hotel"} }
+{ "name" : "Friend Hotel", "stars" : 3 , "rooms" : 60 , "location" : { "lat" : 37.486764 , "lon" : 127.021727 } , "city" : "Seoul", "address" : "345, Hyoryeong-ro, Seocho-gu Seoul Seoul South Korea", "price" : 86 , "internet" : true, "service" : ["Coffee shop"], "checkin" : "2014-03-21T11:00:00" }
+{ "create" : { "_index": "hotels", "_type": "hotel"} }
+{ "name" : "Central Tourist Hotel", "stars" : 3 , "rooms" : 72 , "location" : { "lat" : 37.568907 , "lon" : 126.992885 } , "city" : "Seoul", "address" : "137, Cheonggyecheon-ro, Jongno-gu Seoul Seoul 110430 South Korea", "price" : 108 , "internet" : true, "service" : [], "checkin" : "2014-02-21T11:00:00" }
+{ "create" : { "_index": "hotels", "_type": "hotel"} }
+{ "name" : "Hotel Mare Dongdaemun", "stars" : 3 , "rooms" : 58 , "location" : { "lat" : 37.563748 , "lon" : 127.057625 } , "city" : "Seoul", "address" : "341, Cheonho-daero, Dongdaemun-gu Seoul Seoul 130-030 South Korea ", "price" : 79 , "internet" : true, "service" : [], "checkin" : "2014-03-10T11:00:00" }
+{ "create" : { "_index": "hotels", "_type": "hotel"} }
+{ "name" : "Saerim Hotel", "stars" : 2 , "rooms" : 26 , "location" : { "lat" : 37.573427 , "lon" : 126.984635 } , "city" : "Seoul", "address" : "37-11, Insadong-gil, Jongno-gu Seoul Seoul 110-300 South Korea", "price" : 54 , "internet" : false, "service" : [], "checkin" : "2014-04-19T11:00:00" }
+{ "create" : { "_index": "hotels", "_type": "hotel"} }
+{ "name" : "Hotel Gaon ", "stars" : 2 , "rooms" : 17 , "location" : { "lat" : 37.571496 , "lon" : 127.011843 } , "city" : "Seoul", "address" : "17, Jong-ro 48-gil, Jongno-gu Seoul Seoul 110842 South Korea ", "price" : 72 , "internet" : false, "service" : [], "checkin" : "2014-02-06T11:00:00" }
+{ "create" : { "_index": "hotels", "_type": "hotel"} }
+{ "name" : "Yellow Brick", "stars" : 2 , "rooms" : 37 , "location" : { "lat" : 37.574579 , "lon" : 126.989523 } , "city" : "Seoul", "address" : "33, Samil-daero 32ga-gil, Jongno-gu Seoul Seoul 110-340 South Korea", "price" : 67 , "internet" : true, "service" : [], "checkin" : "2014-04-07T11:00:00" }

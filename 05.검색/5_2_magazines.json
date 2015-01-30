@@ -1,0 +1,8 @@
+{ "index" : { "_index": "magazines", "_type": "magazine"} }
+{ "title": "Vogue", "company": "Conde Nast", "category": "Fashion", "issue": "2014-01-01T00:00:00" }
+{ "index" : { "_index": "magazines", "_type": "magazine"} }
+{ "title": "Time", "company": "Time Inc.", "category": "News magazine", "issue": "2014-03-01T00:00:00" }
+{ "index" : { "_index": "magazines", "_type": "magazine"} }
+{ "title": "People", "company": "Time Inc.", "category": "Human interest", "issue": "2013-10-01T00:00:00" }
+{ "index" : { "_index": "magazines", "_type": "magazine"} }
+{ "title": "GQ", "company": "Conde Nast", "category": "Men's Fashion", "issue": "2012-09-01T00:00:00" }
