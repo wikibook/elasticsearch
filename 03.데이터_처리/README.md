@@ -204,15 +204,37 @@ curl -XGET localhost:9200/books/book/1?pretty
 ```
 
 
-예제 2.1 bin/elasticsearch 실행.
+예제 3.21 도큐먼트가 없다면 도큐먼트 생성. 도큐먼트가 있다면 counter 필드 1 증가
+```
+curl -XGET localhost:9200/books/book/1?pretty
+curl -XPOST localhost:9200/books/book/1/_update -d '
+{
+  "script" : "ctx._source.counter += count",
+  "params" : { "count" : 1 },
+  "upsert" : { "counter" : 0 }
+}'
+curl -XGET localhost:9200/books/book/1?pretty
+curl -XPOST localhost:9200/books/book/1/_update -d '
+{
+  "script" : "ctx._source.counter += count",
+  "params" : { "count" : 1 },
+  "upsert" : { "counter" : 0 }
+}'
+curl -XGET localhost:9200/books/book/1?pretty
 ```
 
+
+###3.2.4 파일을 이용한 데이터 처리
+
+예제 3.22 입력할 데이터를 book_1 파일에 저장
 ```
-
-
-예제 2.1 bin/elasticsearch 실행.
-```
-
+echo '{
+  "title" : "Elasticsearch Guide",
+  "author" : [ "Kim", "Lee" ],
+  "date" : "2014-05-01",
+  "pages" : 300
+}' > book_1
+cat book_1
 ```
 
 
