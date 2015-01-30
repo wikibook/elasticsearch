@@ -47,21 +47,27 @@ curl -XPOST localhost:9200/books/book -d '
 ```
 
 
-예제 2.1 bin/elasticsearch 실행.
+예제 3.5 /books/book/1 도큐먼트 새로 입력
+```
+curl -XPUT http://localhost:9200/books/book/1 -d '
+{
+  "title" : "Elasticsearch Guide",
+  "author" : [ "Kim", "Lee" ],
+  "date" : "2014-05-01",
+  "pages" : 300
+}'
 ```
 
+
+예제 3.6 수정된 /books/book/1 도큐먼트 확인
+```
+curl -XGET http://localhost:9200/books/book/1?pretty=true
 ```
 
 
-예제 2.1 bin/elasticsearch 실행.
+예제 3.7 /books/book/1/_source 데이터 확인
 ```
-
-```
-
-
-예제 2.1 bin/elasticsearch 실행.
-```
-
+curl -XGET http://localhost:9200/books/book/1/_source
 ```
 
 
