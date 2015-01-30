@@ -361,4 +361,4 @@ curl -XGET localhost:9200/books/book/2?pretty
 ##3.3 포스트맨을 이용한 윈도에서 엘라스틱서치 사용
 
 
-크롬 웹 스토어에서 포스트맨 검색 - https://chrome.google.com/webstore/search/%ED%8F%AC%EC%8A%A4%ED%8A%B8%EB%A7%A8
+크롬 웹 스토어에서 포스트맨 검색 - https://chrome.google.com/webstore/search/포스트맨
