@@ -112,55 +112,95 @@ curl -XPOST http://localhost:9200/books/book/1 -d '
 
 예제 3.12 /books 인덱스 삭제 후 /books/book/1 도큐먼트 확인
 ```
-
+curl -XDELETE http://localhost:9200/books
+curl -XGET http://localhost:9200/books/book/1
 ```
 
 
-예제 2.1 bin/elasticsearch 실행.
+###3.2.3 데이터 업데이트(_update) API
+
+예제 3.13 /books/book/1 도큐먼트 확인
 ```
-
-```
-
-
-예제 2.1 bin/elasticsearch 실행.
-```
-
+curl -XGET localhost:9200/books/book/1
 ```
 
 
-예제 2.1 bin/elasticsearch 실행.
+예제 3.14 books/book/1 도큐먼트에 category 필드 추가
 ```
-
-```
-
-
-예제 2.1 bin/elasticsearch 실행.
-```
-
-```
-
-
-예제 2.1 bin/elasticsearch 실행.
-```
-
+curl -XPOST localhost:9200/books/book/1/_update -d '
+{
+  "doc" : {
+    "category" : "ICT"
+  }
+}'
+curl -XGET localhost:9200/books/book/1?pretty
 ```
 
 
-예제 2.1 bin/elasticsearch 실행.
+예제 3.15 books/book/1 도큐먼트의 author 필드를 Lee로 변경
+```
+curl -XPOST localhost:9200/books/book/1/_update -d '
+{
+  "doc" : {
+    "author" : "Lee"
+  }
+}'
+curl -XGET localhost:9200/books/book/1?pretty
 ```
 
+
+예제 3.16 books/book/1 도큐먼트의 pages 필드에 50을 더함
+```
+curl -XPOST localhost:9200/books/book/1/_update -d '
+{
+  "script" : "ctx._source.pages += 50"
+}'
+curl -XGET localhost:9200/books/book/1?pretty
 ```
 
 
-예제 2.1 bin/elasticsearch 실행.
+예제 3.17 author 필드의 값 "Lee"를 배열 ["Lee"]로 변경
+```
+curl -XPOST localhost:9200/books/book/1/_update -d '
+{
+  "doc" : {
+    "author" : ["Lee"]
+  }
+}'
+curl -XGET localhost:9200/books/book/1?pretty
 ```
 
+
+예제 3.18 author 필드에 값 "Kim"을 추가
+```
+curl -XPOST localhost:9200/books/book/1/_update -d '
+{
+  "script" : "ctx._source.author += new_author",
+  "params" : { "new_author" : "Kim" }
+}'
+curl -XGET localhost:9200/books/book/1?pretty
 ```
 
 
-예제 2.1 bin/elasticsearch 실행.
+예제 3.19 author 필드가 "Kim"을 포함하는 경우 pages 필드값을 100으로 변경
+```
+curl -XPOST localhost:9200/books/book/1/_update -d '
+{
+  "script" : "if(ctx._source.author.contains(auth)) { ctx._source.pages = 100 } else { ctx._source.pages = 200 }",
+  "params" : { "auth" : "Kim" }
+}'
+curl -XGET localhost:9200/books/book/1?pretty
 ```
 
+
+예제 3.20 pages 필드가 100 이하일 때 도큐먼트 삭제
+```
+curl -XPOST localhost:9200/books/book/1/_update -d '
+{
+  "script" : "ctx._source.pages <= page_cnt ? ctx.op = \"delete\" : ctx.op = \"none\"",
+  "params" : { "page_cnt" : 100 }
+}'
+curl -XGET localhost:9200/books/book/1?pretty
 ```
 
 
