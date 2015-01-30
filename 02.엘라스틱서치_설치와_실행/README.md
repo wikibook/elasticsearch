@@ -323,4 +323,3 @@ curl -XGET localhost:9200/_nodes?pretty=true
 bin/plugin --remove head
 bin/plugin --list
 ```
-ㄷ
