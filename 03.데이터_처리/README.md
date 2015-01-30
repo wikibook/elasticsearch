@@ -71,31 +71,46 @@ curl -XGET http://localhost:9200/books/book/1/_source
 ```
 
 
-예제 2.1 bin/elasticsearch 실행.
+###3.2.2 데이터 삭제
+
+예제 3.8 /books/book/1/ 도큐먼트 삭제
 ```
-
-```
-
-
-예제 2.1 bin/elasticsearch 실행.
-```
-
+curl -XDELETE http://localhost:9200/books/book/1
 ```
 
 
-예제 2.1 bin/elasticsearch 실행.
+예제 3.9 /books/book/1/ 도큐먼트 삭제 후 확인
 ```
-
-```
-
-
-예제 2.1 bin/elasticsearch 실행.
-```
-
+curl -XGET http://localhost:9200/books/book/1
 ```
 
 
-예제 2.1 bin/elasticsearch 실행.
+예제 3.10 /books/book/1 도큐먼트 삭제 후 다시 데이터 입력
+```
+curl -XPOST http://localhost:9200/books/book/1 -d '
+{
+  "title" : "Elasticsearch Guide",
+  "author" : [ "Kim", "Lee" ],
+  "date" : "2014-05-01",
+  "pages" : 300
+}'
+```
+
+
+예제 3.11 books/book 필드 삭제 후 도큐먼트 데이터 입력
+```
+curl -XDELETE http://localhost:9200/books/book
+curl -XPOST http://localhost:9200/books/book/1 -d '
+{
+  "title" : "Elasticsearch Guide",
+  "author" : [ "Kim", "Lee" ],
+  "date" : "2014-05-01",
+  "pages" : 300
+}'
+```
+
+
+예제 3.12 /books 인덱스 삭제 후 /books/book/1 도큐먼트 확인
 ```
 
 ```

@@ -13,7 +13,7 @@
 ###2.1.2 유닉스 운영체제에서 설치와 실행
 
 
-예제 2.1 bin/elasticsearch 실행.
+예제 2.1 bin/elasticsearch 실행
 ```
 bin/elasticsearch
 ```
