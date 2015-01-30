@@ -1,4 +1,4 @@
-#1. 엘라스틱서치 소개
+#1. 엘라스틱서치
 
 그림 1.1 엘라스틱서치 사용 사례: http://www.elasticsearch.org/case-studies
 
