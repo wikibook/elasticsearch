@@ -283,7 +283,8 @@ curl -XPOST localhost:9200/_bulk -d '
 { "index" : { "_index" : "books", "_type" : "book", "_id" : "1" } }
 { "title" : "Elasticsearch Guide", "author" : "Kim", "pages" : 250 }
 { "index" : { "_index" : "books", "_type" : "book", "_id" : "2" } }
-{ "title" : "Elasticsearch Easy Guide", "author" : "Lee", "pages" : 300 }'
+{ "title" : "Elasticsearch Easy Guide", "author" : "Lee", "pages" : 300 }
+'
 
 curl -XGET localhost:9200/books/book/1?pretty
 
@@ -323,7 +324,8 @@ curl -XPOST localhost:9200/books/book/_bulk -d '
 { "index" : { "_id" : "1" } }
 { "title" : "Elasticsearch Guide", "author" : "Kim", "pages" : 250 }
 { "index" : { "_id" : "2" } }
-{ "title" : "Elasticsearch Easy Guide", "author" : "Lee", "pages" : 300 }'
+{ "title" : "Elasticsearch Easy Guide", "author" : "Lee", "pages" : 300 }
+'
 ```
 
 
