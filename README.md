@@ -1,6 +1,6 @@
 #시작하세요! 엘라스틱서치
 
-![http://wikibook.co.kr/elasticsearch/](./elasticsearch_cover.png =480x)
+![http://wikibook.co.kr/elasticsearch/](./elasticsearch_cover.png)
 
 ###시작하세요! 엘라스틱서치 - 루씬 기반의 실시간 오픈소스 검색엔진
 예제 데이터 파일 및 코드들입니다.
