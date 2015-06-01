@@ -45,7 +45,7 @@ curl -XPUT 'http://localhost:9200/books' -d '
 
 예제 9.5 my_analyzer 분석기를 이용해서 문장 분석
 ```
-curl -XPOST 'http://localhost:9200/books/_analyze -d 'Around the World in Eighty Days'
+curl -XPOST 'http://localhost:9200/books/_analyze?analyzer=my_analyzer&pretty' -d 'Around the World in Eighty Days'
 ```
 
 ##9.2 분석기
